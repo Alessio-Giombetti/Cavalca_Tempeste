@@ -1,0 +1,744 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TalentiOrdineCavalcatempesta",
+				"abbreviation": "ODC",
+				"full": "Talenti per l'Ordine dei Cavalcatempesta",
+				"authors": [
+					"Serverbased"
+				],
+				"convertedBy": [
+					"Serverbased"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": ""
+			}
+		],
+		"dateAdded": 1539373091,
+		"dateLastModified": 1539373091,
+		"_dateLastModifiedHash": ""
+	},
+	"feat": [
+		{
+			"name": "Cartomancer",
+			"source": "ODC",
+			"page": 1,
+			"prerequisite": [
+				{
+					"other": "Sorcerer, Warlock, Bard or Wizard Class"
+				}
+			],
+			"entries": [
+				"You have learned to channel your magic through a deck of playing cards, granting you these benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Card Focus. You can use a deck of cards as your spellcasting focus. When you use the deck as a focus to cast a spell that deals damage, roll a d4. You gain a bonus to one damage roll of the spell equal to the number rolled. This bonus applies to one creature of your choice that you can see damaged by the spell; you can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.",
+						"Card Tricks. You learn the prestidigitation cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use prestidigitation in this way, you can conceal the verbal and somatic components of the spell as mundane conversation and card-handling.",
+						"Hidden Ace. When you finish a long rest, you can choose one spell you know and imbue it into a card; the chosen spell must have a casting time of 1 action, and its level must be less than or equal half your proficiency bonus rounded up. While the card is imbued with the spell, you can use your bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
+					]
+				}
+			]
+		},
+		{
+			"name": "Agent of Order",
+			"source": "ODC",
+			"page": 1,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+                    "level": 12,
+					"other": "at least 3 travels in a legal outer plane"
+				}
+			],
+			"entries": [
+				"You can channel cosmic forces of order that lock the multiverse into patterns. Your actions are your own to choose, but these forces grant you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Ability Score Increase. Increase one ability score of your choice by 1, to a maximum of 20.",
+						"Stasis Strike. Once per turn when you damage a creature you can see within 60 feet of yourself, you can deal an extra 1d8 force damage to the target, and it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + the modifier of the ability score increased by this feat) or be restrained by spectral bindings until the start of your next turn. These bindings manifest as chains, gears, encasing stone, or some other symbol of stasis. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Baleful Scion",
+			"source": "ODC",
+			"page": 1,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+                    "level": 12,
+					"other": "at least 3 travels in a evil outer plane"
+				}
+			],
+			"entries": [
+				"You can channel cosmic forces of evil that cause pain but invigorate your being. You can choose your own actions despite this malign connection. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Ability Score Increase. Increase one ability score of your choice by 1, to a maximum of 20.",
+						"Life-Draining Grasp. Once per turn, when you hit a creature with a melee weapon attack, you can also deal necrotic damage to it. The damage equals 1d6 + your proficiency bonus, and you regain a number of hit points equal to this necrotic damage dealt. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cohort of Chaos",
+			"source": "ODC",
+			"page": 1,
+			"prerequisite": [
+				{
+                    "level": 12,
+					"other": "at least 3 travels in a chaotic outer plane"
+				}
+			],
+			"entries": [
+		"You can channel the cosmic forces of chaos that drive the multiverse toward both freedom and disarray. Your actions are still yours to choose, but you gain these benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Chaotic Flare",
+					"entries": [
+						"When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll on the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends.",
+						{
+							"type": "table",
+							"caption": "Chaotic Flares",
+							"colLabels": [
+								"d4",
+								"Flare"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"{@b Disruption Field.} Waves of energy ripple in a 10-foot sphere centered on you. Every creature other than you that starts its turn in that area, or that moves into that area for the first time on a turn, takes {@dice 1d8} force damage."
+								],
+								[
+									"2",
+									"{@b Battle Fury.} A creature of your choice that you can see is filled with reckless fury. The creature has advantage on attack rolls and disadvantage on ability checks."
+								],
+								[
+									"3",
+									"{@b Unbound.} When you move, you can use some or all of your walking speed to teleport once, along with any equipment you're wearing or carrying, up to the distance used to an unoccupied space that you can see."
+								],
+								[
+									"4",
+									"{@b Wailing Winds.} Howling winds swirl around you in a 60-foot radius. You and any creature in that radius has disadvantage on Wisdom saving throws."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		"You can also forcibly release a chaotic flare as a bonus action, rolling on the table as normal to determine the effects. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+	]
+		},
+		{
+			"name": "Ember of the Fire Giant",
+			"source": "ODC",
+			"page": 2,
+			"prerequisite": [
+				{
+					"level": 12
+				}
+			],
+			"entries": [
+				"You've manifested the fiery combat emblematic of fire giants, granting you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Born of Flame. You have resistance to fire damage.",
+                        "Searing Ignition. When you take the Attack action on your turn, you can replace a single attack with a magical burst of flame. Each creature of your choice within 15 feet of you that can see you must make a Dexterity saving throw (DC equals 8 + your proficiency bonus + your Strength, Constitution or Wisdom modifier, you choice when you pick this feat ). On a failed save, a creature takes fire damage equal to 1d8 + your proficiency bonus, and it is blinded until the start of your next turn. On a successful save, the creature takes half as much damage and isn't blinded. You can use your Searing Ignition a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Guile of the Cloud Giant",
+			"source": "ODC",
+			"page": 2,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+					"level": 12
+				}
+			],
+			"entries": [
+				"You've manifested the airy speech and magic emblematic of cloud giants, granting you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Ability Score Increase. Increase your Dexterity, Constitution, or Charisma by 1, to a maximum of 20.",
+						"Cloudy Escape. When a creature you can see hits you with an attack roll, you can use your reaction to give yourself resistance to that attack's damage. You then teleport to an unoccupied space that you can see within 30 feet of yourself. You can use this reaction a number of times equal to half your proficiency bonus (rounded up), and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul Of The Storm Giant",
+			"source": "ODC",
+			"page": 2,
+            "ability": [
+				{
+					"choose": {
+						"from": [
+					"int",
+					"wis",
+					"cha"
+				],
+						"amount": 1
+					}
+				}
+			],
+			"prerequisite": [
+				{
+					"level": 12
+				}
+			],
+			"entries": [
+				"You've manifested divination abilities and tempest magic emblematic of storm giants, granting you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.",
+						"Maelstrom Aura. As a bonus action, you surround yourself in an aura of magical wind and lightning that extends 10 feet from you in every direction but not through total cover. The aura lasts until the start of your next turn or until you are incapacitated. While the aura is active, attack rolls against you have disadvantage, and whenever a creature starts its turn within the aura, you can force the creature to make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature's speed is halved until the start of its next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Keenness of the Stone Giant",
+			"source": "ODC",
+			"page": 1,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+					"str",
+					"con",
+					"wis"
+				],
+						"amount": 1
+					}
+				}
+			],
+						
+			"prerequisite": [
+				{
+					"level": 12
+				}
+			],
+			"entries": [
+				"You've manifested the physical talents emblematic of stone giants, granting you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Ability Score Increase. Increase your Strength, Constitution, or Wisdom by 1, to a maximum of 20.",
+						"Stone Throw. As a bonus action, you can touch a rock that can fit in the palm of your hand and imbue it with magic. While the rock is imbued with magic and you are wielding it, the rock is a magic ranged weapon with which you're proficient, and it has the thrown property with a normal range of 60 feet and a long range of 180 feet. On a hit, the rock deals 1d10 bludgeoning damage, and if the target is a creature, it must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat) or be knocked prone. The magic remains in the rock until you hit with it or finish a long rest. You can imbue a number of rocks equal to your proficiency bonus with this bonus action, and you regain all expended uses when you finish a long rest.",
+                        "Cavernous Sight. You gain darkvision out to a range of 60 feet. If you already have darkvision from another source, its range increases by 60 feet."
+					]
+				}
+			]
+		},
+        {
+			"name": "Outlands Envoy",
+			"source": "ODC",
+			"page": 1,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have spent significant time in Sigil or elsewhere in the Outlands, the crossroads of the multiverse. Being steeped in converging planar energies grants you these benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Ability Score Increase. Increase one ability score of your choice by 1, to a maximum of 20.",
+						"Crossroads Emissary. You learn the misty step and tongues spells. You can cast each spell once using this feat without a spell slot, and you must finish a long rest before you can cast that spell in this way again. When you cast tongues using this feat, you require no material components. You can also cast these spells using spell slots you have of the appropriate level. The spell's spellcasting ability is the one chosen when you gained the Scion of the Outer Planes feat."
+					]
+				}
+			]
+		},
+        {
+	"name": "Righteous Heritor",
+	"source": "ODC",
+	"page": 1,
+	"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+	],
+	"entries": [
+		"You can channel the cosmic forces of good that foster serenity and fellowship. You are still free to choose your own actions, but gain these benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Soothe Pain",
+					"entries": [
+						"When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to dull its suffering and reduce the damage it takes by {@dice 1d10} + your proficiency bonus. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		}
+	]
+},
+        {
+	"name": "Scion Of Elemental Air",
+	"source": "ODC",
+	"page": 8,
+    "ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"known": {
+				"_": [
+					"minor illusion#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		"You've been exposed to the primordial magic of the Elemental Plane of Air, granting you the following benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Elemental Magic",
+					"entries": [
+						"You learn the {@spell minor illusion} cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat)."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Wind's Glide",
+					"entries": [
+						"You can use a bonus action to gain a flying speed equal to your walking speed until the end of your turn. If you are airborne at the end of your turn after using this movement and aren't held aloft by other means, you fall. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		}
+	]
+},
+        {
+	"name": "Scion Of Elemental Fire",
+	"source": "ODC",
+	"page": 9,
+    "ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+	],
+	"additionalSpells": [
+		{
+			"known": {
+				"_": [
+					"dancing lights#c",
+					"produce flame#c"
+				]
+			}
+		}
+	],
+	"entries": [
+		"You've been exposed to the primordial magic of the Elemental Plane of Fire, granting you the following benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Elemental Magic",
+					"entries": [
+						"You learn the {@spell dancing lights} cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat)."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Fervent Blaze",
+					"entries": [
+						"You learn the {@spell produce flame} cantrip, using the same spellcasting ability chosen for this feat's Elemental Magic benefit. You can cast produce flame as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest."
+					]
+				}
+			]
+		}
+	]
+},
+        {
+	"name": "Scion Of Elemental Earth",
+	"source": "ODC",
+	"page": 8,
+	"additionalSpells": [
+		{
+			"known": {
+				"_": [
+					"druidcraft#c"
+				]
+			}
+		}
+	],
+    "ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+	],     
+	"entries": [
+		"You've been exposed to the primordial magic of the Elemental Plane of Earth, granting you the following benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Elemental Magic",
+					"entries": [
+						"You learn the {@spell druidcraft} cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat)."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Earthen Shield",
+					"entries": [
+						"You can use a bonus action to conjure a bulwark of earth that provides half cover to you or a creature of your choice within 30 feet of yourself. The bulwark remains until the start of your next turn. You can create this bulwark a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		}
+	]
+},
+        {
+	"name": "Scion Of Elemental Water",
+	"source": "ODC",
+	"page": 9,
+	"additionalSpells": [
+		{
+			"known": {
+				"_": [
+					"thaumaturgy#c"
+				]
+			}
+		}
+	],
+    "ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con",
+					"int",
+					"wis",
+					"cha"
+				],
+				"amount": 1
+			}
+		}
+	],
+	"entries": [
+		"You've been exposed to the primordial magic of the Elemental Plane of Water, granting you the following benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Elemental Magic",
+					"entries": [
+						"You learn the thaumaturgy cantrip, using Intelligence, Wisdom, or Charisma as the spellcasting ability (choose when you select this feat)."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Wave Surge",
+					"entries": [
+						"You can use a bonus action to create a forceful surge of water directed at a creature within 15 feet of you that you can see. The target must make a Strength saving throw; the DC for this save is equal to 8 + your proficiency bonus + the spellcasting ability modifier chosen for this feat, and a creature can choose to fail this saving throw. On a failure, the target is pushed up to 10 feet away from you or pulled up to 10 feet toward you (your choice). The water vanishes immediately after the creature succeeds or fails. You can create this effect a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				}
+			]
+		}
+	]
+},
+        {
+	"name": "Vigor Of The Hill Giant",
+	"source": "ODC",
+	"page": 1,
+	"ability": [
+		{
+			"con": 1
+		}
+	],
+	"entries": [
+		"You've manifested the resilience emblematic of hill giants, granting you the following benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Bulwark",
+					"entries": [
+						"When you are subjected to an effect that would move you at least 5 feet or knock you {@condition prone}, you can use your reaction to steady yourself. You are then neither moved nor knocked {@condition prone}."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Iron Stomach",
+					"entries": [
+						"Whenever you eat food as part of a short rest and spend one or more Hit Dice to regain hit points, you regain additional hit points equal to your Constitution modifier + your proficiency bonus."
+					]
+				}
+			]
+		}
+	]
+},
+        {
+	"name": "Scion Of The Outer Planes",
+	"source": "ODC",
+	"page": 9,
+	"additionalSpells": [
+		{
+			"name": "Astral Plane",
+			"known": {
+				"_": [
+					"message#c"
+				]
+			}
+		},
+		{
+			"name": "Chaotic Outer Plane",
+			"known": {
+				"_": [
+					"minor illusion#c"
+				]
+			}
+		},
+		{
+			"name": "Evil Outer Plane",
+			"known": {
+				"_": [
+					"chill touch#c"
+				]
+			}
+		},
+		{
+			"name": "Good Outer Plane",
+			"known": {
+				"_": [
+					"sacred flame#c"
+				]
+			}
+		},
+		{
+			"name": "Lawful Outer Plane",
+			"known": {
+				"_": [
+					"guidance#c"
+				]
+			}
+		},
+		{
+			"name": "The Outlands",
+			"known": {
+				"_": [
+					"mage hand#c"
+				]
+			}
+		}
+	],
+    "prerequisite": [
+				{
+                    "level": 8,
+					"other": "at least 3 travels to the type of planes you choose for the feature of this feat."
+				}
+			],
+	"entries": [
+		"You are influenced by and adept at navigating planar pathways and the strange realities of the Outer Planes.",
+		"Whether planar essence infuses you or you have extraplanar ancestry, your connection to a plane infuses you with the energies found there. Choose a type of plane listed in the Planar Infusion table below. Your choice gives you resistance to a damage type and the ability to cast a cantrip, as specified in the table. You can cast this cantrip without material components, and your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose when you select this feat).",
+		{
+			"type": "table",
+			"caption": "Planar Infusion",
+			"colLabels": [
+				"Plane",
+				"Damage Resistance",
+				"Cantrip"
+			],
+			"colStyles": [
+				"col-4",
+				"col-4",
+				"col-4"
+			],
+			"rows": [
+				[
+					"Astral Plane",
+					"Psychic",
+					"{@spell Message}"
+				],
+				[
+					"Chaotic Outer Plane",
+					"Necrotic",
+					"{@spell Minor illusion}"
+				],
+				[
+					"Evil Outer Plane",
+					"Necrotic",
+					"{@spell Chill touch}"
+				],
+				[
+					"Good Outer Plane",
+					"Radiant",
+					"{@spell Sacred flame}"
+				],
+				[
+					"Lawful Outer Plane",
+					"Radiant",
+					"{@spell Guidance}"
+				],
+				[
+					"The Outlands",
+					"Psychic",
+					"{@spell Mage hand}"
+				]
+			]
+		}
+	]
+},
+{
+	"name": "Heavy Armor Master",
+	"source": "ODC",
+	"page": 167,
+	"prerequisite": [
+		{
+			"proficiency": [
+				{
+					"armor": "heavy"
+				}
+			]
+		}
+	],
+	"ability": [
+		{
+			"str": 1
+		}
+	],
+	"entries": [
+		"You can use your armor to deflect strikes that would kill others. You gain the following benefits:",
+		{
+			"type": "list",
+			"items": [
+				"While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from non-magical attacks is reduced by an amount equal to your Proficiency Bonus. If you are wearing magic armor you also reduce bludgeoning, piercing, and slashing damage dealt by magical attack."
+			]
+		}
+	]
+}
+	]
+}
